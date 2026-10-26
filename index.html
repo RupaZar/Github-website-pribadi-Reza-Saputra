@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10151f">
+  <title>My Journey | Phainon Inspired Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <a class="logo" href="#home">✦ MY JOURNEY<span>.</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+    <nav class="nav-menu" id="nav-menu">
+      <a href="#home">Home</a><a href="#about">Identity</a><a href="#experience">Journey</a>
+      <a href="#education">Education</a><a href="#skills">Abilities</a><a href="#contact" class="nav-cta">Let's Talk ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <div class="status-label"><span class="status-dot"></span> PERSONAL ARCHIVE · ONLINE</div>
+        <p class="eyebrow">✦ EVERY JOURNEY STARTS SOMEWHERE</p>
+        <h1>A NEW STORY<br><span class="gold-text">BEGINS HERE.</span></h1>
+        <p class="hero-subtitle">Hi, I'm <span class="name-highlight">Reza Saputra!</span></p>
+        <p class="hero-description">Seorang mahasiswa, penjelajah ide, dan pembelajar. Ini adalah tempat untuk mengenal cerita, pengalaman, serta hal-hal yang sedang saya perjuangkan.</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-gold">Explore My World ↘</a>
+          <button class="btn btn-glass" id="flame-toggle"><span>✧</span> Awaken Flame</button>
+        </div>
+        <div class="hero-footer"><span>SCROLL TO DISCOVER</span><span class="scroll-line"></span><span>01 — 05</span></div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <span class="decor-star star-one">✦</span><span class="decor-star star-two">✧</span>
+        <div class="profile-card tilt-card" id="profile-card">
+          <div class="profile-top"><span>✦ CHARACTER PROFILE</span><span class="profile-rank">SSR</span></div>
+          <div class="profile-art">
+            <div class="art-halo"></div><div class="art-rune rune-one">✧</div><div class="art-rune rune-two">✦</div>
+            <div class="art-monogram">RS</div><span class="art-caption">YOUR PORTRAIT</span>
+          </div>
+          <div class="profile-info"><div><p class="profile-label">NAME / IDENTITY</p><h2>Reza Saputra</h2></div><span class="element-symbol">✧</span></div>
+          <p class="profile-quote">"Every step forward becomes part of my story."</p>
+          <div class="profile-stats">
+            <div><span>CLASS</span><strong>STUDENT</strong></div><div><span>STATUS</span><strong>GROWING</strong></div><div><span>MISSION</span><strong>CREATE</strong></div>
+          </div>
+        </div>
+        <div class="floating-chip chip-top">✦ Keep Growing!</div><div class="floating-chip chip-bottom">✧ DREAM · LEARN · CREATE</div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 / IDENTITY ARCHIVE</p><h2>Who Am <span class="gold-text">I?</span></h2><p class="muted">Every character has a story. So do we.</p></div>
+      <div class="about-grid">
+        <div class="about-note reveal"><span class="note-symbol">✦</span><p class="note-small">A NOTE TO MYSELF</p><h3>Keep moving forward, even when the path is unknown.</h3><div class="note-bottom"><span>PERSONAL LOG</span><span>NO. 001</span></div></div>
+        <div class="about-content reveal">
+          <p>Halo! Saya <strong>Reza Saputra</strong>, seorang mahasiswa yang senang mempelajari hal baru, mencoba berbagai ide, dan mengembangkan kemampuan diri.</p>
+          <p>Saya percaya bahwa proses belajar tidak selalu berjalan mulus. Setiap tantangan memberikan kesempatan untuk memahami sesuatu dengan lebih baik dan terus berkembang.</p>
+          <div class="trait-list"><span>✧ Curious Mind</span><span>✧ Creative Thinker</span><span>✧ Always Learning</span><span>✧ Future Builder</span></div>
+          <p class="tiny-hint">Psst... coba klik bintang di pojok kanan bawah.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey-section" id="experience">
+      <div class="section-heading reveal"><p class="eyebrow">02 / MEMORIES & MILESTONES</p><h2>My <span class="gold-text">Journey.</span></h2><p class="muted">Klik setiap kartu untuk membuka catatannya.</p></div>
+      <div class="memory-grid">
+        <button class="memory-card reveal" type="button" aria-pressed="false"><span class="memory-inner"><span class="memory-front"><span class="memory-index">MEMORY 001</span><span class="memory-icon">✧</span><strong>Campus Life</strong><span class="memory-hint">CLICK TO REVEAL ↻</span></span><span class="memory-back"><span class="memory-index">THE EXPERIENCE</span><strong>Organisasi / Kegiatan</strong><span>Panitia Infest pada bidang PDD.</span><span class="memory-hint">CLICK TO RETURN ↻</span></span></span></button>
+        <button class="memory-card reveal" type="button" aria-pressed="false"><span class="memory-inner"><span class="memory-front"><span class="memory-index">MEMORY 002</span><span class="memory-icon">✦</span><strong>Personal Project</strong><span class="memory-hint">CLICK TO REVEAL ↻</span></span><span class="memory-back"><span class="memory-index">THE CREATION</span><strong>Proyek Pribadi</strong><span>Membuat portogolio pribadi dan web angkatan yang sedang dalam produksi.</span><span class="memory-hint">CLICK TO RETURN ↻</span></span></span></button>
+        <button class="memory-card reveal" type="button" aria-pressed="false"><span class="memory-inner"><span class="memory-front"><span class="memory-index">MEMORY 003</span><span class="memory-icon">✧</span><strong>New Challenge</strong><span class="memory-hint">CLICK TO REVEAL ↻</span></span><span class="memory-back"><span class="memory-index">THE LESSON</span><strong>Pengalaman Lain</strong><span>Mengikuti berbagai penampilan Theater dan pengalaman dalam mendekorasi panggung.</span><span class="memory-hint">CLICK TO RETURN ↻</span></span></span></button>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="section-heading reveal"><p class="eyebrow">03 / KNOWLEDGE & GROWTH</p><h2>The Learning <span>Path.</span></h2></div>
+      <div class="education-grid">
+        <article class="education-card reveal"><span class="education-symbol">✦</span><p class="education-date">2026 — PRESENT</p><h3>Universitas Tanjungpura</h3><p class="education-major">Sistem Informasi</p><p class="muted">Tempat saya mengembangkan pengetahuan tentang teknologi, sistem informasi, dan pemecahan masalah.</p><span class="education-tag">CURRENT CHAPTER</span></article>
+        <article class="education-card reveal"><span class="education-symbol">✧</span><p class="education-date">2023 — 2026</p><h3>SMA Negeri 2 Pontianak</h3><p class="education-major">IPA</p><p class="muted">Berbagai memori yang berlimpah, kenangan yang indah dan berharga. Tetapi, memori hanyalah memori.</p><span class="education-tag">PAST CHAPTER</span></article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading reveal"><p class="eyebrow">04 / ABILITY DATABASE</p><h2>My <span class="gold-text">Abilities.</span></h2><p class="muted">Kemampuan yang saya gunakan untuk menghadapi tantangan.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><span class="skill-icon">⌘</span><p class="skill-type">TYPE / TECHNICAL</p><h3>Programming</h3><p>HTML, CSS, JavaScript, Python</p><div class="skill-tags"><span>Logic</span><span>Web</span></div></article>
+        <article class="skill-card reveal"><span class="skill-icon">✎</span><p class="skill-type">TYPE / CREATIVE</p><h3>Creative Thinking</h3><p>Ide, desain, dan pemecahan masalah secara kreatif.</p><div class="skill-tags"><span>Ideas</span><span>Design</span></div></article>
+        <article class="skill-card reveal"><span class="skill-icon">✧</span><p class="skill-type">TYPE / PERSONAL</p><h3>Soft Skills</h3><p>Komunikasi, kerja sama, dan manajemen waktu.</p><div class="skill-tags"><span>Teamwork</span><span>Growth</span></div></article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-box reveal"><span class="contact-emblem">✦</span><p class="eyebrow">05 / ESTABLISH CONNECTION</p><h2>Our Next Story<br><span class="gold-text">Starts Here.</span></h2><p class="muted">Punya ide, pertanyaan, atau ingin berkolaborasi? Mari mulai percakapan baru.</p>
+        <a class="btn btn-gold" href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">Send a Message ↗</a>
+        <div class="contact-links">
+          <a href="https://instagram.com/Artupas_azer" target="_blank" rel="noopener noreferrer"><span class="contact-icon">◎</span><span><small>INSTAGRAM</small><strong>@Artupas_azer</strong></span><span class="contact-arrow">↗</span></a>
+          <a href="https://github.com/RupaZar" target="_blank" rel="noopener noreferrer"><span class="contact-icon">⌘</span><span><small>GITHUB</small><strong>RupaZar</strong></span><span class="contact-arrow">↗</span></a>
+          <a href="https://wa.me/6281349361501" target="_blank" rel="noopener noreferrer"><span class="contact-icon">✆</span><span><small>WHATSAPP</small><strong>081349361501</strong></span><span class="contact-arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a href="#home" class="logo">✦ MY JOURNEY<span>.</span></a><p>Crafted with curiosity & a little stardust.</p><p>© <span id="year"></span> Reza Saputra</p></footer>
+  <button class="secret-star" id="secret-star" aria-label="Buka pesan rahasia" title="A little secret">✦</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"><span class="toast-symbol">✧</span><p id="toast-message">Keep moving forward.</p><button id="toast-close" aria-label="Tutup pesan">×</button></div>
+  <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">↑</button>
+</body>
+</html>
